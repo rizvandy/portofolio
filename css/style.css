@@ -287,34 +287,6 @@ a:hover {
   }
 }
 
-/* ==========================================================================
-   NAVBAR RESPONSIVE - MOBILE ADJUSTMENTS
-   ========================================================================== */
-@media (max-width: 991.98px) {
-  /* Perkecil logo di mobile */
-  .navbar-logo {
-    width: 42px;
-    height: 42px;
-  }
-
-  /* Perbesar tap target language switcher */
-  .lang-switcher-btn {
-    padding: 0.35rem 0.75rem;
-    font-size: 0.85rem;
-  }
-
-  /* Perbesar tap target hamburger menu */
-  .navbar-toggler {
-    padding: 0.5rem;
-    margin-left: 0.25rem;
-  }
-
-  /* Rapatkan gap antara language switcher & toggler */
-  .navbar-actions {
-    gap: 0.5rem;
-  }
-}
-
 /* --------------------------------------------------------------------------
    5. HERO SECTION
    -------------------------------------------------------------------------- */
@@ -327,7 +299,6 @@ a:hover {
   position: relative;
   background: linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
 }
-
 
 .status-dot {
   width: 6px;
@@ -478,16 +449,6 @@ a:hover {
   margin-bottom: 3.5rem;
 }
 
-.section-number {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--gray-500);
-  letter-spacing: 0.05em;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
 .section-title {
   font-size: 2.25rem;
   font-weight: 800;
@@ -518,21 +479,36 @@ a:hover {
    -------------------------------------------------------------------------- */
 .about-bio {
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--gray-700);
 }
 
 .about-bio p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;
 }
 
 .quick-profile-card {
   background-color: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--border-radius-md);
-  padding: 1.75rem;
+  padding: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.quick-profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border-color: var(--gray-400);
 }
 
 .quick-profile-title {
@@ -549,7 +525,9 @@ a:hover {
 .profile-info-list {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1.25rem;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .profile-info-item {
@@ -563,7 +541,18 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--gray-500);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.info-label i {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .info-value {
@@ -594,90 +583,64 @@ a:hover {
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   color: var(--black);
+  letter-spacing: -0.01em;
 }
 
-.skill-category-title i {
-  font-size: 1rem;
-  color: var(--gray-700);
-}
-
+/* Grid Layout untuk Skill Card */
 .skill-items-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
 }
 
+/* Skill Card Individual - SERAGAM PUTIH */
 .skill-tag {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.85rem;
-  border-radius: var(--border-radius-sm);
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all var(--transition-fast);
-}
-
-.skill-tag.comfortable {
-  background-color: var(--black);
-  color: var(--white);
-  border: 1px solid var(--black);
-}
-
-.skill-tag.comfortable:hover {
-  background-color: var(--gray-800);
-  transform: translateY(-1px);
-}
-
-.skill-tag.basic {
-  background-color: var(--off-white);
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: var(--border-radius-md);
+  min-height: 100px;
+  text-align: center;
+  background-color: var(--white);
   color: var(--gray-800);
   border: 1px solid var(--gray-200);
+  transition: transform var(--transition-base),
+              box-shadow var(--transition-base),
+              border-color var(--transition-base);
 }
 
-.skill-tag.basic:hover {
-  background-color: var(--gray-100);
+.skill-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   border-color: var(--gray-400);
-  transform: translateY(-1px);
 }
 
-.skill-badge-level {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 0.1rem 0.35rem;
-  border-radius: 3px;
-  margin-left: 0.2rem;
+/* Ikon SVG (Simple Icons) */
+.skill-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  /* Default: monokrom abu gelap */
+  filter: grayscale(1) brightness(0.85);
 }
 
-.skill-tag.comfortable .skill-badge-level {
-  background: rgba(255, 255, 255, 0.2);
-  color: var(--white);
+/* Hover: warna asli + membesar */
+.skill-tag:hover .skill-icon-img {
+  filter: none;
+  transform: scale(1.15);
 }
 
-.skill-tag.basic .skill-badge-level {
-  background: var(--gray-200);
-  color: var(--gray-700);
-}
-
-.skills-legend {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--gray-600);
+/* Nama Skill */
+.skill-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: inherit;
 }
 
 /* --------------------------------------------------------------------------

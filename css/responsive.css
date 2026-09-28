@@ -3,6 +3,24 @@
    Media Queries & Mobile Optimizations
    ========================================================================== */
 
+/* ==========================================
+   ABOUT SECTION - DESKTOP ALIGNMENT
+   Paksa kolom bio & kartu profil sama tinggi di desktop
+   ========================================== */
+@media (min-width: 992px) {
+  #about .row.g-4 {
+    align-items: stretch;
+  }
+
+  #about .col-lg-5 {
+    display: flex;
+  }
+
+  #about .quick-profile-card {
+    width: 100%;
+  }
+}
+
 /* Medium Devices (Tablets, less than 992px) */
 @media (max-width: 991.98px) {
   /* ==========================================
@@ -190,6 +208,28 @@
   .skill-category-card,
   .contact-form-card {
     padding: 1.25rem;
+  }
+
+  /* ==========================================
+     SKILLS GRID - 2 kolom di mobile kecil
+     ========================================== */
+    .skill-items-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .skill-tag {
+    min-height: 90px;
+    padding: 0.75rem 0.4rem;
+  }
+
+  .skill-icon-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skill-name {
+    font-size: 0.75rem;
   }
 
   .project-actions {
