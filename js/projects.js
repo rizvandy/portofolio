@@ -15,9 +15,9 @@ const projectsData = [
       en: "A clean, responsive, and interactive personal portfolio website with minimalist monochrome design. Features bilingual support (ID/EN), scroll reveal animations, and AI-powered auto-translation."
     },
     technologies: ["HTML5", "CSS3", "JavaScript ES6+", "Bootstrap 5", "Vercel"],
-    image: "assets/images/projects/project-01/portfolio.jpg",
-    github: "https://github.com/rizvandy/portfolio",
-    demo: "https://rizvandy-portfolio.vercel.app"
+    image: "assets/images/projects/project-01/portofolio.jpg",
+    github: "https://github.com/rizvandy/portofolio",
+    demo: "https://rizvandy-portofolio.vercel.app"
   },
   {
     id: 2,
