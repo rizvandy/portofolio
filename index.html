@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Primary Meta Tags & SEO -->
+    <title>Rizvandy Akbar</title>
+    <meta
+      name="title"
+      content="Rizvandy Akbar P.R | Informatics Student & Web Developer"
+    />
+    <meta
+      name="description"
+      content="Portfolio Rizvandy Akbar P.R, mahasiswa Teknik Informatika yang berfokus pada Web Development dan sedang berkembang menuju Full Stack Development."
+    />
+    <meta
+      name="keywords"
+      content="Rizvandy Akbar P.R, Rizvandy Akbar, Web Developer, Informatics Student, Universitas Dr. Soetomo, Frontend Developer, Surabaya, Portfolio"
+    />
+    <meta name="author" content="Rizvandy Akbar P.R" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/rizvandy" />
+    <meta
+      property="og:title"
+      content="Rizvandy Akbar P.R | Informatics Student & Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio Rizvandy Akbar P.R, mahasiswa Teknik Informatika Universitas Dr. Soetomo Surabaya berfokus pada Web Development."
+    />
+    <meta property="og:image" content="assets/images/profile/profile.jpg" />
+
+    <!-- Favicon placeholder -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>"
+    />
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6 CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-custom"
+      id="main-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand navbar-brand-text" href="#home">
+          <img
+            src="assets/images/logo/logo.png"
+            alt="Rizvandy Akbar Logo"
+            class="navbar-logo"
+          />
+        </a>
+
+        <!-- Navbar Actions: Language Switcher + Mobile Toggler (SELALU TAMPIL) -->
+        <div class="navbar-actions">
+          <!-- Language Switcher -->
+          <div class="lang-switcher-container">
+            <button
+              class="lang-switcher-btn"
+              id="lang-switcher"
+              type="button"
+              aria-label="Switch Language"
+            >
+              <span class="lang-option active" id="lang-option-id">ID</span>
+              <span class="lang-divider">|</span>
+              <span class="lang-option" id="lang-option-en">EN</span>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4"></i>
+          </button>
+        </div>
+
+        <!-- Nav Links (Hanya Menu Navigasi) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" data-i18n="navHome"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-i18n="navAbout">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" data-i18n="navSkills"
+                >Keahlian</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-i18n="navProjects"
+                >Proyek</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#learning" data-i18n="navLearning"
+                >Perjalanan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume" data-i18n="navResume"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-i18n="navContact"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Hero Text Content -->
+          <div class="col-lg-7 text-center text-lg-start mb-5 mb-lg-0">
+            <div class="hero-badge">
+              <span class="status-dot"></span>
+              <span data-i18n="heroBadge">Buka Terhadap Peluang Magang</span>
+            </div>
+
+            <p class="hero-greeting" data-i18n="heroGreeting">HALO, SAYA</p>
+            <h1 class="hero-title" data-i18n="heroName">RIZVANDY AKBAR P.R</h1>
+            <h2 class="hero-subtitle" data-i18n="heroSubtitle">
+              Frontend Web Developer | Mahasiswa Teknik Informatika
+            </h2>
+
+            <p class="hero-description" data-i18n="heroDescription">
+              Saya berfokus membangun antarmuka web yang responsif dan berpusat
+              pada pengguna. Saya juga memiliki pemahaman dasar Backend (PHP,
+              Laravel, MySQL) yang memungkinkan saya mengintegrasikan tampilan
+              dengan data dan logika server.
+            </p>
+
+            <div class="hero-ctas">
+              <a
+                href="#projects"
+                class="btn btn-primary"
+                data-i18n="heroBtnProjects"
+              >
+                Lihat Project
+              </a>
+              <a
+                href="assets/documents/resume-id.pdf"
+                download
+                id="hero-btn-resume"
+                class="btn btn-outline-primary"
+                data-i18n="heroBtnResume"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Photo / Avatar -->
+          <div class="col-lg-5 text-center">
+            <div class="profile-image-container">
+              <div class="profile-image-wrapper">
+                <img
+                  src="assets/images/profile/profile.jpg"
+                  alt="Rizvandy Akbar P.R"
+                  class="profile-img"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <!-- Fallback Placeholder if Image Not Loaded -->
+                <div class="profile-placeholder" style="display: none">
+                  <span class="profile-initials">RA</span>
+                  <span class="profile-tag">INFORMATICS</span>
+                </div>
+              </div>
+              <div class="profile-frame-accent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT & QUICK PROFILE SECTION
+       ========================================================================== -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number" data-i18n="aboutSectionNum"
+            >01. TENTANG SAYA</span
+          >
+          <h2 class="section-title" data-i18n="aboutTitle">Tentang Saya</h2>
+          <p class="section-subtitle" data-i18n="aboutSubtitle">
+            Latar belakang pendidikan dan fokus pengembangan keahlian
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Biography Text -->
+          <div class="col-lg-7 reveal">
+            <div class="about-bio">
+              <p data-i18n="aboutBio1">
+                Saya adalah seorang mahasiswa program studi S1 Teknik
+                Informatika di Universitas Dr. Soetomo yang memiliki
+                ketertarikan tinggi pada dunia teknologi informasi dan
+                pengembangan perangkat lunak web.
+              </p>
+              <p data-i18n="aboutBio2">
+                Saat ini, saya berfokus pada pemantapan keahlian Frontend
+                Development menggunakan HTML5, CSS3, JavaScript, dan framework
+                CSS seperti Bootstrap. Pada saat yang sama, saya juga sedang
+                secara aktif mempelajari dasar-dasar Backend Development untuk
+                memahami arsitektur web secara utuh.
+              </p>
+              <p data-i18n="aboutBio3">
+                Tujuan jangka panjang saya adalah berkembang menjadi seorang
+                Full Stack Developer yang kompeten. Saya sangat antusias untuk
+                mendapatkan pengalaman magang profesional di industri serta
+                memperluas jaringan komunikasi dengan sesama praktisi teknologi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Profile Card -->
+          <div class="col-lg-5 reveal reveal-delay-1">
+            <div class="quick-profile-card">
+              <h3 class="quick-profile-title">
+                <i class="fas fa-user-circle me-2"></i>
+                <span data-i18n="quickProfileTitle">Profil Ringkas</span>
+              </h3>
+
+              <div class="profile-info-list">
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="profileLocationLabel"
+                    >Lokasi</span
+                  >
+                  <span class="info-value" data-i18n="profileLocationVal"
+                    >Surabaya, Jawa Timur, Indonesia</span
+                  >
+                </div>
+
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="profileEduLabel"
+                    >Pendidikan</span
+                  >
+                  <span class="info-value" data-i18n="profileEduVal"
+                    >S1 Teknik Informatika</span
+                  >
+                </div>
+
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="profileUnivLabel"
+                    >Universitas</span
+                  >
+                  <span class="info-value" data-i18n="profileUnivVal"
+                    >Universitas Dr. Soetomo</span
+                  >
+                </div>
+
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="profileStatusLabel"
+                    >Status</span
+                  >
+                  <span class="info-value" data-i18n="profileStatusVal"
+                    >Mahasiswa (2024 – Sekarang)</span
+                  >
+                </div>
+
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="profileFocusLabel"
+                    >Fokus Utama</span
+                  >
+                  <span class="info-value" data-i18n="profileFocusVal"
+                    >Web Development (Frontend & Backend)</span
+                  >
+                </div>
+
+                <div class="profile-info-item">
+                  <span class="info-label" data-i18n="profileGoalLabel"
+                    >Target Karir</span
+                  >
+                  <span class="info-value" data-i18n="profileGoalVal"
+                    >Full Stack Developer</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== -->
+    <section class="section-padding section-bg-alt" id="skills">
+      <div class="container">
+        <div class="section-header text-center text-md-start reveal">
+          <span class="section-number" data-i18n="skillsSectionNum"
+            >02. KEAHLIAN TEKNIS</span
+          >
+          <h2 class="section-title" data-i18n="skillsTitle">Keahlian Teknis</h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">
+            Teknologi dan perangkat lunak yang sedang saya pelajari dan kuasai
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1: Frontend & Programming -->
+          <div class="col-md-6 reveal">
+            <div class="skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-laptop-code"></i>
+                <span data-i18n="catFrontend">Frontend & Programming</span>
+              </h3>
+              <div class="skill-items-grid">
+                <span class="skill-tag comfortable"
+                  >HTML
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >CSS
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >JavaScript
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >Bootstrap
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >Tailwind CSS
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >Java
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & Tools -->
+          <div class="col-md-6 reveal reveal-delay-1">
+            <div class="skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-server"></i>
+                <span data-i18n="catBackend">Backend & Tools</span>
+              </h3>
+              <div class="skill-items-grid">
+                <span class="skill-tag basic"
+                  >PHP
+                  <span class="skill-badge-level" data-i18n="badgeBasic"
+                    >Basic</span
+                  ></span
+                >
+                <span class="skill-tag basic"
+                  >Laravel
+                  <span class="skill-badge-level" data-i18n="badgeBasic"
+                    >Basic</span
+                  ></span
+                >
+                <span class="skill-tag basic"
+                  >MySQL
+                  <span class="skill-badge-level" data-i18n="badgeBasic"
+                    >Basic</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >Git
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >GitHub
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag comfortable"
+                  >Figma
+                  <span class="skill-badge-level" data-i18n="badgeComfortable"
+                    >Comfortable</span
+                  ></span
+                >
+                <span class="skill-tag basic"
+                  >Next.js
+                  <span class="skill-badge-level" data-i18n="badgeBasic"
+                    >Basic</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Legend -->
+        <div class="skills-legend reveal">
+          <div class="legend-item">
+            <span
+              class="skill-tag comfortable py-1 px-2"
+              style="font-size: 0.75rem"
+              >Comfortable</span
+            >
+            <span data-i18n="legendComfortable"
+              >Comfortable (Sering digunakan & dipahami)</span
+            >
+          </div>
+          <div class="legend-item">
+            <span class="skill-tag basic py-1 px-2" style="font-size: 0.75rem"
+              >Basic</span
+            >
+            <span data-i18n="legendBasic"
+              >Basic (Dalam tahap pembelajaran dasar)</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+    <section class="section-padding" id="projects">
+      <div class="container">
+        <div
+          class="section-header d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 reveal"
+        >
+          <div>
+            <span class="section-number" data-i18n="projectsSectionNum"
+              >03. PORTFOLIO PROYEK</span
+            >
+            <h2 class="section-title" data-i18n="projectsTitle">
+              Proyek Web Development
+            </h2>
+            <p class="section-subtitle" data-i18n="projectsSubtitle">
+              Kumpulan proyek web yang telah dan sedang saya kembangkan selama
+              proses belajar
+            </p>
+          </div>
+
+          <!-- Optional Category Filter -->
+          <div class="project-filters mt-3 mt-md-0">
+            <button
+              class="btn btn-primary btn-sm project-filter-btn active me-1"
+              data-filter="all"
+              data-i18n="projectFilterAll"
+            >
+              Semua Proyek
+            </button>
+            <button
+              class="btn btn-outline-secondary btn-sm project-filter-btn"
+              data-filter="frontend"
+              data-i18n="projectFilterFrontend"
+            >
+              Frontend
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Project Cards Container -->
+        <div class="row g-4" id="projects-grid">
+          <!-- Rendered dynamically by js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       LEARNING JOURNEY TIMELINE
+       ========================================================================== -->
+    <section class="section-padding section-bg-alt" id="learning">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-number" data-i18n="journeySectionNum"
+            >04. ALUR BELAJAR</span
+          >
+          <h2 class="section-title" data-i18n="journeyTitle">
+            Perjalanan Belajar
+          </h2>
+          <p class="section-subtitle" data-i18n="journeySubtitle">
+            Tahapan perkembangan keahlian saya dari akademis menuju industri
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Step 1 -->
+          <div class="timeline-item active reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-phase">PHASE 01</div>
+              <h3 class="timeline-title" data-i18n="step1Title">
+                Mahasiswa Teknik Informatika
+              </h3>
+              <p class="timeline-desc" data-i18n="step1Desc">
+                Memulai pendidikan di Universitas Dr. Soetomo (2024).
+                Mempelajari logika pemrograman dasar, struktur data, dan
+                algoritma.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item active reveal reveal-delay-1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-phase">PHASE 02</div>
+              <h3 class="timeline-title" data-i18n="step2Title">
+                Frontend Development
+              </h3>
+              <p class="timeline-desc" data-i18n="step2Desc">
+                Menguasai dasar web development modern: HTML5, CSS3, JavaScript
+                ES6+, dan Bootstrap 5 untuk membangun UI responsif.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item active reveal reveal-delay-2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-phase">PHASE 03</div>
+              <h3 class="timeline-title" data-i18n="step3Title">
+                Pengembangan Proyek Web
+              </h3>
+              <p class="timeline-desc" data-i18n="step3Desc">
+                Menerapkan pengetahuan dengan membangun proyek web nyata,
+                melatih manipulasi DOM, pemrosesan data, dan desain UI.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item active reveal reveal-delay-3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-phase">PHASE 04 (CURRENT FOCUS)</div>
+              <h3 class="timeline-title" data-i18n="step4Title">
+                Backend Development
+              </h3>
+              <p class="timeline-desc" data-i18n="step4Desc">
+                Sedang mendalami pemrograman sisi server menggunakan PHP,
+                framework Laravel, dan pengelolaan basis data MySQL.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item future reveal reveal-delay-4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-phase">PHASE 05 (FUTURE GOAL)</div>
+              <h3 class="timeline-title" data-i18n="step5Title">
+                Full Stack Development
+              </h3>
+              <p class="timeline-desc" data-i18n="step5Desc">
+                Target jangka panjang untuk menguasai integrasi frontend dan
+                backend secara utuh serta arsitektur sistem berbasis cloud.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       EDUCATION SECTION
+       ========================================================================== -->
+    <section class="section-padding section-bg-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number" data-i18n="eduSectionNum"
+            >06. PENDIDIKAN</span
+          >
+          <h2 class="section-title" data-i18n="eduTitle">Pendidikan Formal</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 reveal">
+            <div class="education-card">
+              <div class="education-icon-box">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h3 class="education-university" data-i18n="eduUniv">
+                  Universitas Dr. Soetomo
+                </h3>
+                <div class="education-degree" data-i18n="eduDegree">
+                  S1 Teknik Informatika
+                </div>
+                <div class="education-meta">
+                  <span class="education-meta-item">
+                    <i class="far fa-calendar-alt"></i>
+                    <span data-i18n="eduPeriod">2024 – Sekarang</span>
+                  </span>
+                  <span class="education-meta-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-i18n="eduLocation"
+                      >Surabaya, Jawa Timur, Indonesia</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       RESUME SECTION
+       ========================================================================== -->
+    <section class="section-padding" id="resume">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-number" data-i18n="resumeSectionNum"
+            >07. CURRICULUM VITAE</span
+          >
+          <h2 class="section-title" data-i18n="resumeTitle">
+            Resume & Kualifikasi
+          </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <div class="resume-box">
+              <div class="resume-icon">
+                <i class="far fa-file-pdf"></i>
+              </div>
+              <h3 class="resume-title">Curriculum Vitae (CV)</h3>
+              <p class="resume-text" data-i18n="resumeText">
+                Unduh resume terbaru saya dalam format PDF (Bahasa Indonesia /
+                Inggris) untuk melihat rincian akademik dan latar belakang
+                teknis.
+              </p>
+
+              <div class="resume-actions">
+                <a
+                  href="assets/documents/resume-id.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline-primary"
+                  id="btn-view-resume"
+                  data-i18n="btnViewResume"
+                >
+                  Lihat Resume
+                </a>
+                <a
+                  href="assets/documents/resume-id.pdf"
+                  download="Rizvandy_Akbar_PR_Resume_ID.pdf"
+                  class="btn btn-primary"
+                  id="btn-download-resume"
+                  data-i18n="btnDownloadResume"
+                >
+                  Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+    <section class="section-padding section-bg-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-number" data-i18n="contactSectionNum"
+            >08. KONTAK</span
+          >
+          <h2 class="section-title" data-i18n="contactTitle">Hubungi Saya</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">
+            Terbuka untuk diskusi, peluang magang, dan kolaborasi proyek
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Contact Information Cards -->
+          <div class="col-lg-5 reveal">
+            <div class="d-flex flex-column gap-3 mb-4">
+              <!-- Email -->
+              <a href="mailto:rizvandyakbar25@gmail.com" class="contact-card">
+                <div class="contact-icon-box">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-info-title" data-i18n="contactEmailLabel">
+                    Alamat Email
+                  </div>
+                  <div class="contact-info-detail">
+                    rizvandyakbar25@gmail.com
+                  </div>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+6287803265438" class="contact-card">
+                <div class="contact-icon-box">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <div class="contact-info-title" data-i18n="contactPhoneLabel">
+                    Telepon / WhatsApp
+                  </div>
+                  <div class="contact-info-detail">+62 878-0326-5438</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="pt-2">
+              <div class="info-label mb-2" data-i18n="contactSocialLabel">
+                Media Sosial
+              </div>
+              <div class="social-links-grid">
+                <a
+                  href="https://github.com/rizvandy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="GitHub Profile"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rizvandy-akbar-331304372/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="LinkedIn Profile"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/rizvandy_akbar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn"
+                  aria-label="Instagram Profile"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7 reveal reveal-delay-1">
+            <div class="contact-form-card">
+              <h3 class="fs-5 fw-bold mb-3" data-i18n="formTitle">
+                Kirim Pesan Langsung
+              </h3>
+
+              <form id="portfolio-contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label
+                      for="form-name"
+                      class="form-label"
+                      data-i18n="formNameLabel"
+                      >Nama Lengkap</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="form-name"
+                      placeholder="Masukkan nama Anda"
+                      required
+                      data-i18n="formNamePlaceholder"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      for="form-email"
+                      class="form-label"
+                      data-i18n="formEmailLabel"
+                      >Alamat Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="form-email"
+                      placeholder="nama@email.com"
+                      required
+                      data-i18n="formEmailPlaceholder"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label
+                      for="form-subject"
+                      class="form-label"
+                      data-i18n="formSubjectLabel"
+                      >Subjek Pesan</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="form-subject"
+                      placeholder="Tujuan pesan / Peluang Magang"
+                      required
+                      data-i18n="formSubjectPlaceholder"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label
+                      for="form-message"
+                      class="form-label"
+                      data-i18n="formMessageLabel"
+                      >Pesan Anda</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="form-message"
+                      rows="4"
+                      placeholder="Tuliskan pesan Anda di sini..."
+                      required
+                      data-i18n="formMessagePlaceholder"
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100"
+                      data-i18n="formSubmitBtn"
+                    >
+                      Kirim Pesan
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="footer-brand" data-i18n="navBrand">
+              RIZVANDY AKBAR P.R
+            </div>
+            <div class="footer-subtitle" data-i18n="footerSubtitle">
+              Frontend Web Developer | Mahasiswa Teknik Informatika
+            </div>
+          </div>
+
+          <div class="col-md-6 text-center text-md-end">
+            <div class="d-inline-flex gap-2 mb-2">
+              <a
+                href="https://github.com/rizvandy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rizvandy-akbar-331304372/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/rizvandy_akbar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="mailto:rizvandyakbar25@gmail.com"
+                class="footer-social-btn"
+                aria-label="Email"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="text-center">
+          <p class="footer-copyright mb-0" data-i18n="footerCopyright">
+            © 2026 Rizvandy Akbar P.R. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
+       JAVASCRIPT SCRIPTS
+       ========================================================================== -->
+    <!-- Bootstrap 5 JavaScript Bundle CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Modular Scripts -->
+    <script src="js/language.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

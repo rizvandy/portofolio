@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#09090b"/>
+  <rect x="40" y="40" width="720" height="370" rx="8" fill="#18181b" stroke="#27272a" stroke-width="2"/>
+  <circle cx="70" cy="70" r="6" fill="#ef4444"/>
+  <circle cx="90" cy="70" r="6" fill="#f59e0b"/>
+  <circle cx="110" cy="70" r="6" fill="#10b981"/>
+  <line x1="40" y1="95" x2="760" y2="95" stroke="#27272a" stroke-width="2"/>
+  <text x="400" y="210" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#ffffff" text-anchor="middle">INTERACTIVE WEB QUIZ APP</text>
+  <text x="400" y="250" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#71717a" text-anchor="middle">Real-time Score &amp; Timer System</text>
+  <rect x="300" y="290" width="200" height="44" rx="6" fill="#ffffff"/>
+  <text x="400" y="318" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#000000" text-anchor="middle">START QUIZ</text>
+</svg>
