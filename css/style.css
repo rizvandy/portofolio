@@ -144,11 +144,10 @@ a:hover {
    4. NAVIGATION BAR
    -------------------------------------------------------------------------- */
 .navbar-custom {
-  background-color: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  /* border-bottom dihilangkan untuk tampilan lebih minimalis */
-  transition: all var(--transition-base);
+  background-color: #ffffff;
+  border: none !important;
+  outline: none !important;
+  transition: padding 0.25s ease, box-shadow 0.25s ease;
   padding: 1rem 0;
 }
 
