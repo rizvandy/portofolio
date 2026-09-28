@@ -328,20 +328,6 @@ a:hover {
   background: linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
-  background-color: var(--black);
-  color: var(--white);
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  border-radius: var(--border-radius-pill);
-  margin-bottom: 1.5rem;
-}
 
 .status-dot {
   width: 6px;
