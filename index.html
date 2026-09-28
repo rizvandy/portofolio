@@ -444,43 +444,28 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
+        <!-- ==========================================================================
        PROJECTS SECTION
        ========================================================================== -->
     <section class="section-padding" id="projects">
       <div class="container">
-        <div
-          class="section-header d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 reveal"
-        >
-          <div>
-            <h2 class="section-title" data-i18n="projectsTitle">
-              Proyek Web Development
-            </h2>
-            <p class="section-subtitle" data-i18n="projectsSubtitle">
-              Kumpulan proyek web yang telah dan sedang saya kembangkan selama
-              proses belajar
-            </p>
-          </div>
-
-          <!-- Optional Category Filter -->
-          <div class="project-filters mt-3 mt-md-0">
-            <button
-              class="btn btn-primary btn-sm project-filter-btn active me-1"
-              data-filter="all"
-              data-i18n="projectFilterAll"
-            >
-              Semua Proyek
-            </button>
-            <button
-              class="btn btn-outline-secondary btn-sm project-filter-btn"
-              data-filter="frontend"
-              data-i18n="projectFilterFrontend"
-            >
-              Frontend
-            </button>
-          </div>
+        <div class="section-header reveal">
+          <h2 class="section-title" data-i18n="projectsTitle">
+            Proyek Web Development
+          </h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">
+            Kumpulan proyek web yang telah dan sedang saya kembangkan selama
+            proses belajar
+          </p>
         </div>
 
+        <!-- Dynamic Project Cards Container -->
+        <div class="row g-4" id="projects-grid">
+          <!-- Rendered dynamically by js/projects.js -->
+        </div>
+      </div>
+    </section>
+          
         <!-- Dynamic Project Cards Container -->
         <div class="row g-4" id="projects-grid">
           <!-- Rendered dynamically by js/projects.js -->

@@ -1,101 +1,76 @@
 /* ==========================================================================
    Rizvandy Akbar P.R - Projects Data & Dynamic Renderer
-   Manages portfolio projects, bilingual content, and conditional buttons
+   Manages portfolio projects and bilingual content
    ========================================================================== */
 
 const projectsData = [
   {
     id: 1,
-    number: "01",
     title: {
-      id: "Website Portfolio Personal Developer",
-      en: "Personal Developer Portfolio Website"
+      id: "Website Portfolio Personal",
+      en: "Personal Portfolio Website"
     },
     description: {
-      id: "Website portofolio personal yang bersih, responsif, dan interaktif dengan desain monokrom. Dibuat menggunakan HTML5, CSS3 kustom, JavaScript ES6+, dan Bootstrap 5 dengan fitur switcher dua bahasa (ID/EN).",
-      en: "A clean, responsive, and interactive personal portfolio website with a minimalist monochrome design. Built using HTML5, custom CSS3, JavaScript ES6+, and Bootstrap 5 featuring bilingual support (ID/EN)."
+      id: "Website portofolio personal yang bersih, responsif, dan interaktif dengan desain monokrom. Dilengkapi fitur bilingual (ID/EN), animasi scroll reveal, dan integrasi auto-translate menggunakan AI.",
+      en: "A clean, responsive, and interactive personal portfolio website with minimalist monochrome design. Features bilingual support (ID/EN), scroll reveal animations, and AI-powered auto-translation."
     },
-    technologies: ["HTML5", "CSS3", "JavaScript ES6+", "Bootstrap 5"],
-    image: "assets/images/projects/project-01/thumbnail.jpg",
-    github: "https://github.com/rizvandy/rizvandy-portfolio",
-    demo: "https://rizvandy.github.io/rizvandy-portfolio",
-    status: {
-      id: "Selesai",
-      en: "Completed"
-    },
-    category: "frontend"
+    technologies: ["HTML5", "CSS3", "JavaScript ES6+", "Bootstrap 5", "Vercel"],
+    image: "assets/images/projects/project-01/portfolio.jpg",
+    github: "https://github.com/rizvandy/portfolio",
+    demo: "https://rizvandy-portfolio.vercel.app"
   },
   {
     id: 2,
-    number: "02",
     title: {
-      id: "Antarmuka Web Sistem Informasi Akademik",
-      en: "Academic Information System Web UI"
+      id: "E-Commerce Tas Online",
+      en: "Online Bag E-Commerce"
     },
     description: {
-      id: "Desain antarmuka web interaktif untuk pengelolaan data mahasiswa, jadwal perkuliahan, dan pengisian KRS dengan layout responsif berbasis Bootstrap.",
-      en: "Interactive web interface design for student data management, course schedule, and academic registration with responsive Bootstrap layout."
+      id: "Website e-commerce untuk penjualan tas dengan fitur lengkap: katalog produk, filter kategori, pencarian, detail produk, keranjang belanja, wishlist, checkout, serta sistem login & register. Mendukung dua bahasa (ID/EN).",
+      en: "E-commerce website for selling bags with complete features: product catalog, category filter, search, product detail, shopping cart, wishlist, checkout, and login & register system. Supports bilingual (ID/EN)."
     },
-    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5"],
-    image: "assets/images/projects/project-02/thumbnail.jpg",
-    github: "https://github.com/rizvandy/academic-system-ui",
-    demo: null,
-    status: {
-      id: "Selesai",
-      en: "Completed"
-    },
-    category: "frontend"
+    technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Bootstrap 5"],
+    image: "assets/images/projects/project-02/shop_bag.jpg",
+    github: "https://github.com/rizvandy/Website-E-Commerce-Bag",
+    demo: "https://rizvandy.github.io/Website-E-Commerce-Bag/"
   },
   {
     id: 3,
-    number: "03",
     title: {
-      id: "Aplikasi Kuis Web Interaktif",
-      en: "Interactive Web Quiz Application"
+      id: "Byte & Brew - Sistem Pesan Kopi Online",
+      en: "Byte & Brew - Online Coffee Ordering System"
     },
     description: {
-      id: "Aplikasi kuis berbasis web yang menyajikan pertanyaan pilihan ganda, timer hitung mundur, perhitungan skor otomatis, dan evaluasi jawaban.",
-      en: "Web-based quiz application featuring multiple choice questions, countdown timer, automatic scoring, and answer review."
+      id: "Aplikasi web untuk memesan kopi secara online. Pengguna dapat memilih menu, memfilter berdasarkan kategori, melakukan checkout, dan menerima email konfirmasi pesanan secara otomatis setelah checkout.",
+      en: "Web application for ordering coffee online. Users can browse the menu, filter by category, checkout, and receive an automatic order confirmation email after checkout."
     },
-    technologies: ["HTML5", "CSS3", "JavaScript ES6+"],
-    image: "assets/images/projects/project-03/thumbnail.jpg",
-    github: "https://github.com/rizvandy/interactive-quiz-app",
-    demo: "https://rizvandy.github.io/interactive-quiz-app",
-    status: {
-      id: "Selesai",
-      en: "Completed"
-    },
-    category: "frontend"
+    technologies: ["Blade", "PHP", "JavaScript", "CSS3"],
+    image: "assets/images/projects/project-03/coffee_shop.jpg",
+    github: "https://github.com/rizvandy/Website-Pesan-Kopi",
+    demo: null
   },
   {
     id: 4,
-    number: "04",
     title: {
-      id: "Katalog Produk E-Commerce Landing Page",
-      en: "E-Commerce Product Catalog Landing Page"
+      id: "My Notes - Aplikasi Catatan Pribadi",
+      en: "My Notes - Personal Note-Taking App"
     },
     description: {
-      id: "Landing page e-commerce dengan sistem pencarian dan filter produk, modal detail barang, serta kalkulasi keranjang belanja sederhana.",
-      en: "E-commerce landing page featuring product search and filtering, detail modal views, and a simple shopping cart calculator."
+      id: "Aplikasi catatan pribadi berbasis web dengan sistem login & register. Pengguna dapat menulis dan mengelola catatan harian mereka dengan antarmuka yang sederhana dan mudah digunakan.",
+      en: "Web-based personal note-taking app with login & register system. Users can write and manage their daily notes with a simple and easy-to-use interface."
     },
-    technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
-    image: "assets/images/projects/project-04/thumbnail.jpg",
-    github: null,
-    demo: "https://rizvandy.github.io/ecommerce-catalog",
-    status: {
-      id: "Dalam Proses",
-      en: "In Progress"
-    },
-    category: "frontend"
+    technologies: ["HTML5", "JavaScript", "CSS3"],
+    image: "assets/images/projects/project-04/notes_app.jpg",
+    github: "https://github.com/rizvandy/My_Notes",
+    demo: null
   }
 ];
 
 /**
  * Render Project Cards into DOM
  * @param {string} lang - Current language ('id' | 'en')
- * @param {string} filter - Filter category ('all' | 'frontend' | etc)
  */
-function renderProjects(lang = "id", filter = "all") {
+function renderProjects(lang = "id") {
   const container = document.getElementById("projects-grid");
   if (!container) return;
 
@@ -104,24 +79,9 @@ function renderProjects(lang = "id", filter = "all") {
   // Clear previous content
   container.innerHTML = "";
 
-  // Filter projects if category filter applied
-  const filteredProjects = filter === "all" 
-    ? projectsData 
-    : projectsData.filter(p => p.category === filter);
-
-  if (filteredProjects.length === 0) {
-    container.innerHTML = `
-      <div class="col-12 text-center py-5">
-        <p class="text-muted">${currentLang === "en" ? "No projects found in this category." : "Tidak ada proyek ditemukan dalam kategori ini."}</p>
-      </div>
-    `;
-    return;
-  }
-
-  filteredProjects.forEach((project, index) => {
+  projectsData.forEach((project, index) => {
     const titleText = project.title[currentLang] || project.title.id;
     const descText = project.description[currentLang] || project.description.id;
-    const statusText = project.status[currentLang] || project.status.id;
 
     // Build Technologies HTML Badges
     const techBadgesHtml = project.technologies
@@ -131,29 +91,26 @@ function renderProjects(lang = "id", filter = "all") {
     // Build GitHub Button (Only if link exists)
     const githubBtnHtml = project.github ? `
       <a href="${escapeHtml(project.github)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-project">
-        <i class="fab fa-github me-1"></i> ${currentLang === "en" ? "GitHub" : "GitHub"}
+        <i class="fab fa-github me-1"></i> GitHub
       </a>
     ` : "";
 
     // Build Demo Button (Only if link exists)
     const demoBtnHtml = project.demo ? `
       <a href="${escapeHtml(project.demo)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-project">
-        <i class="fas fa-external-link-alt me-1"></i> ${currentLang === "en" ? "Live Demo" : "Live Demo"}
+        <i class="fas fa-external-link-alt me-1"></i> Live Demo
       </a>
     ` : "";
 
-    // Kartu proyek: Tambahkan class "reveal" dengan stagger delay berdasarkan index
-    // Index 0 -> reveal, Index 1 -> reveal reveal-delay-1, dst. Maksimal delay-5
+    // Stagger delay untuk animasi reveal
     const delayClass = index > 0 ? ` reveal-delay-${Math.min(index, 5)}` : "";
-    
+
     const cardCol = document.createElement("div");
-    cardCol.className = `col-12 col-md-6 col-lg-6 mb-4 reveal${delayClass}`;
+    cardCol.className = `col-12 col-md-6 mb-4 reveal${delayClass}`;
     cardCol.innerHTML = `
       <div class="project-card">
         <div class="project-image-box">
           <img src="${escapeHtml(project.image)}" alt="${escapeHtml(titleText)}" class="project-img" loading="lazy" onerror="this.onerror=null; this.src='assets/images/projects/placeholder.svg';">
-          <span class="project-number-badge">${escapeHtml(project.number)}</span>
-          <span class="project-status-badge">${escapeHtml(statusText)}</span>
         </div>
         <div class="project-content">
           <h3 class="project-title">${escapeHtml(titleText)}</h3>
@@ -172,9 +129,8 @@ function renderProjects(lang = "id", filter = "all") {
     container.appendChild(cardCol);
   });
 
-  // PENTING: Panggil ulang initScrollReveal agar Observer mendeteksi kartu baru ini
+  // Panggil ulang initScrollReveal agar Observer mendeteksi kartu baru
   if (typeof initScrollReveal === "function") {
-    // Gunakan setTimeout kecil untuk memastikan DOM selesai di-paint
     setTimeout(initScrollReveal, 50);
   }
 }
@@ -193,21 +149,8 @@ function escapeHtml(str) {
 }
 
 /**
- * Initialize Projects Filtering UI
+ * Placeholder untuk kompatibilitas (filter sudah dihapus)
  */
 function initProjectFilters() {
-  const filterBtns = document.querySelectorAll(".project-filter-btn");
-  filterBtns.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      filterBtns.forEach(b => b.classList.remove("active", "btn-primary"));
-      filterBtns.forEach(b => b.classList.add("btn-outline-secondary"));
-
-      btn.classList.add("active", "btn-primary");
-      btn.classList.remove("btn-outline-secondary");
-
-      const category = btn.getAttribute("data-filter");
-      const currentLang = typeof getCurrentLanguage === "function" ? getCurrentLanguage() : "id";
-      renderProjects(currentLang, category);
-    });
-  });
+  // No-op: filter sudah dihapus
 }
