@@ -564,33 +564,24 @@ a:hover {
 /* --------------------------------------------------------------------------
    8. SKILLS SECTION
    -------------------------------------------------------------------------- */
-.skill-category-card {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: var(--border-radius-md);
-  padding: 1.75rem;
+.skill-category-section {
+  /* Wrapper tanpa card visual — hanya container */
   height: 100%;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
-}
-
-.skill-category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border-color: var(--gray-400);
 }
 
 .skill-category-title {
   font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   color: var(--black);
   letter-spacing: -0.01em;
+  text-align: center;
 }
 
 /* Grid Layout untuk Skill Card */
 .skill-items-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
 }
 
@@ -619,17 +610,15 @@ a:hover {
   border-color: var(--gray-400);
 }
 
-/* Ikon SVG (Simple Icons) */
+/* Ikon SVG (Iconify) */
 .skill-icon-img {
   width: 32px;
   height: 32px;
   object-fit: contain;
-  transition: transform 0.3s ease;
-  /* Default: monokrom abu gelap */
-  filter: grayscale(1) brightness(0.85);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(1) brightness(0) opacity(0.85);
 }
 
-/* Hover: warna asli + membesar */
 .skill-tag:hover .skill-icon-img {
   filter: none;
   transform: scale(1.15);
@@ -844,11 +833,11 @@ a:hover {
 
 .timeline-phase {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--gray-500);
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
 }
 
 .timeline-title {
