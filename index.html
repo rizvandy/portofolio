@@ -93,9 +93,7 @@
           />
         </a>
 
-        <!-- Navbar Actions: Language Switcher + Mobile Toggler (SELALU TAMPIL) -->
         <div class="navbar-actions">
-          <!-- Language Switcher -->
           <div class="lang-switcher-container">
             <button
               class="lang-switcher-btn"
@@ -109,7 +107,6 @@
             </button>
           </div>
 
-          <!-- Mobile Menu Toggler -->
           <button
             class="navbar-toggler"
             type="button"
@@ -123,41 +120,25 @@
           </button>
         </div>
 
-        <!-- Nav Links (Hanya Menu Navigasi) -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#home" data-i18n="navHome"
-                >Beranda</a
-              >
+              <a class="nav-link active" href="#home" data-i18n="navHome">Beranda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about" data-i18n="navAbout">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills" data-i18n="navSkills"
-                >Keahlian</a
-              >
+              <a class="nav-link" href="#skills" data-i18n="navSkills">Keahlian</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects" data-i18n="navProjects"
-                >Proyek</a
-              >
+              <a class="nav-link" href="#projects" data-i18n="navProjects">Proyek</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#learning" data-i18n="navLearning"
-                >Perjalanan</a
-              >
+              <a class="nav-link" href="#learning" data-i18n="navLearning">Perjalanan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume" data-i18n="navResume"
-                >Resume</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" data-i18n="navContact"
-                >Kontak</a
-              >
+              <a class="nav-link" href="#contact" data-i18n="navContact">Kontak</a>
             </li>
           </ul>
         </div>
@@ -170,7 +151,6 @@
     <section class="hero-section" id="home">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Hero Text Content -->
           <div class="col-lg-7 text-center text-lg-start mb-5 mb-lg-0">
             <p class="hero-greeting" data-i18n="heroGreeting">HALO, SAYA</p>
             <h1 class="hero-title" data-i18n="heroName">RIZVANDY AKBAR P.R</h1>
@@ -186,11 +166,7 @@
             </p>
 
             <div class="hero-ctas">
-              <a
-                href="#projects"
-                class="btn btn-primary"
-                data-i18n="heroBtnProjects"
-              >
+              <a href="#projects" class="btn btn-primary" data-i18n="heroBtnProjects">
                 Lihat Project
               </a>
               <a
@@ -205,7 +181,6 @@
             </div>
           </div>
 
-          <!-- Profile Photo / Avatar -->
           <div class="col-lg-5 text-center">
             <div class="profile-image-container">
               <div class="profile-image-wrapper">
@@ -218,7 +193,6 @@
                     this.nextElementSibling.style.display = 'flex';
                   "
                 />
-                <!-- Fallback Placeholder if Image Not Loaded -->
                 <div class="profile-placeholder" style="display: none">
                   <span class="profile-initials">RA</span>
                   <span class="profile-tag">INFORMATICS</span>
@@ -236,7 +210,7 @@
        ========================================================================== -->
     <section class="section-padding" id="about">
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header text-center reveal">
           <h2 class="section-title" data-i18n="aboutTitle">Tentang Saya</h2>
           <p class="section-subtitle" data-i18n="aboutSubtitle">
             Latar belakang pendidikan dan fokus pengembangan keahlian
@@ -244,7 +218,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- Biography Text -->
           <div class="col-lg-7 reveal">
             <div class="about-bio">
               <p data-i18n="aboutBio1">
@@ -275,7 +248,6 @@
             </div>
           </div>
 
-          <!-- Quick Profile Card -->
           <div class="col-lg-5 reveal reveal-delay-1">
             <div class="quick-profile-card">
               <h3 class="quick-profile-title">
@@ -363,7 +335,6 @@
         </div>
 
         <div class="row g-4">
-          <!-- Card 1: Using Now -->
           <div class="col-md-6 reveal">
             <div class="skill-category-section">
               <h3 class="skill-category-title">
@@ -406,7 +377,6 @@
             </div>
           </div>
 
-          <!-- Card 2: Learning Now -->
           <div class="col-md-6 reveal reveal-delay-1">
             <div class="skill-category-section">
               <h3 class="skill-category-title">
@@ -449,7 +419,7 @@
        ========================================================================== -->
     <section class="section-padding" id="projects">
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header text-center reveal">
           <h2 class="section-title" data-i18n="projectsTitle">
             Proyek Web Development
           </h2>
@@ -459,7 +429,6 @@
           </p>
         </div>
 
-        <!-- Dynamic Project Cards Container -->
         <div class="row g-4" id="projects-grid">
           <!-- Rendered dynamically by js/projects.js -->
         </div>
@@ -483,7 +452,6 @@
         <div class="timeline-container">
           <div class="timeline-line"></div>
 
-          <!-- Step 1 -->
           <div class="timeline-item active reveal">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -497,7 +465,6 @@
             </div>
           </div>
 
-          <!-- Step 2 -->
           <div class="timeline-item active reveal reveal-delay-1">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -511,7 +478,6 @@
             </div>
           </div>
 
-          <!-- Step 3 -->
           <div class="timeline-item active reveal reveal-delay-2">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -525,7 +491,6 @@
             </div>
           </div>
 
-          <!-- Step 4 - Current -->
           <div class="timeline-item active reveal reveal-delay-3">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -542,60 +507,10 @@
       </div>
     </section>
 
-       <!-- ==========================================================================
-       RESUME SECTION
-       ========================================================================== -->
-    <section class="section-padding" id="resume">
-      <div class="container">
-        <div class="section-header text-center reveal">
-          <h2 class="section-title" data-i18n="resumeTitle">Resume</h2>
-          <p class="section-subtitle" data-i18n="resumeSubtitle">
-            Resume singkat tentang skill, proyek, dan pendidikan saya
-          </p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8 reveal">
-            <div class="resume-box">
-              <div class="resume-icon">
-                <i class="far fa-file-pdf"></i>
-              </div>
-              <h3 class="resume-title" data-i18n="resumeBoxTitle">Resume</h3>
-              <p class="resume-text" data-i18n="resumeText">
-                Unduh resume terbaru saya dalam format PDF (Bahasa Indonesia) untuk melihat rincian akademik dan latar belakang teknis.
-              </p>
-
-              <div class="resume-actions">
-                <a
-                  href="assets/documents/resume-id.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-outline-primary"
-                  id="btn-view-resume"
-                  data-i18n="btnViewResume"
-                >
-                  Lihat Resume
-                </a>
-                <a
-                  href="assets/documents/resume-id.pdf"
-                  download="Rizvandy_Akbar_PR_Resume.pdf"
-                  class="btn btn-primary"
-                  id="btn-download-resume"
-                  data-i18n="btnDownloadResume"
-                >
-                  Download Resume
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-        <!-- ==========================================================================
+    <!-- ==========================================================================
        CONTACT SECTION
        ========================================================================== -->
-    <section class="section-padding section-bg-alt" id="contact">
+    <section class="section-padding" id="contact">
       <div class="container">
         <div class="section-header text-center reveal">
           <h2 class="section-title" data-i18n="contactTitle">Hubungi Saya</h2>
@@ -608,23 +523,19 @@
         <div class="row justify-content-center mb-4">
           <div class="col-lg-10 reveal">
             <div class="contact-form-card">
-              <!--<h3 class="fs-5 fw-bold mb-3 text-center" data-i18n="formTitle">
-                Kirim Pesan Langsung
-              </h3>-->
-
-              <form id="portfolio-contact-form">
+              <form
+                id="portfolio-contact-form"
+                action="https://formspree.io/f/xqpeqvrj"
+                method="POST"
+              >
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label
-                      for="form-name"
-                      class="form-label"
-                      data-i18n="formNameLabel"
-                      >Nama Lengkap</label
-                    >
+                    <label for="form-name" class="form-label" data-i18n="formNameLabel">Nama Lengkap</label>
                     <input
                       type="text"
                       class="form-control"
                       id="form-name"
+                      name="name"
                       placeholder="Masukkan nama Anda"
                       required
                       data-i18n="formNamePlaceholder"
@@ -632,16 +543,12 @@
                   </div>
 
                   <div class="col-md-6">
-                    <label
-                      for="form-email"
-                      class="form-label"
-                      data-i18n="formEmailLabel"
-                      >Alamat Email</label
-                    >
+                    <label for="form-email" class="form-label" data-i18n="formEmailLabel">Alamat Email</label>
                     <input
                       type="email"
                       class="form-control"
                       id="form-email"
+                      name="email"
                       placeholder="nama@email.com"
                       required
                       data-i18n="formEmailPlaceholder"
@@ -649,16 +556,12 @@
                   </div>
 
                   <div class="col-12">
-                    <label
-                      for="form-subject"
-                      class="form-label"
-                      data-i18n="formSubjectLabel"
-                      >Subjek Pesan</label
-                    >
+                    <label for="form-subject" class="form-label" data-i18n="formSubjectLabel">Subjek Pesan</label>
                     <input
                       type="text"
                       class="form-control"
                       id="form-subject"
+                      name="subject"
                       placeholder="Tujuan pesan / Peluang Magang"
                       required
                       data-i18n="formSubjectPlaceholder"
@@ -666,15 +569,11 @@
                   </div>
 
                   <div class="col-12">
-                    <label
-                      for="form-message"
-                      class="form-label"
-                      data-i18n="formMessageLabel"
-                      >Pesan Anda</label
-                    >
+                    <label for="form-message" class="form-label" data-i18n="formMessageLabel">Pesan Anda</label>
                     <textarea
                       class="form-control"
                       id="form-message"
+                      name="message"
                       rows="5"
                       placeholder="Tuliskan pesan Anda di sini..."
                       required
@@ -682,14 +581,24 @@
                     ></textarea>
                   </div>
 
+                  <input type="hidden" name="_subject" value="Pesan Baru dari Portfolio Website" />
+
                   <div class="col-12">
-                    <button
-                      type="submit"
-                      class="btn btn-primary w-100"
-                      data-i18n="formSubmitBtn"
-                    >
+                    <button type="submit" class="btn btn-primary w-100" data-i18n="formSubmitBtn">
                       Kirim Pesan
                     </button>
+                  </div>
+
+                  <div class="col-12">
+                    <div id="form-success" class="form-message form-message-success" style="display: none;">
+                      ✅ Pesan Anda berhasil terkirim!
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div id="form-error" class="form-message form-message-error" style="display: none;">
+                      ❌ Maaf, terjadi kesalahan. Coba lagi atau hubungi saya via email langsung.
+                    </div>
                   </div>
                 </div>
               </form>
@@ -697,58 +606,85 @@
           </div>
         </div>
 
-        <!-- Contact Info (2 Cards Side-by-Side) -->
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-5 reveal reveal-delay-1">
-            <a href="mailto:rizvandyakbar25@gmail.com" class="contact-card">
-              <div class="contact-icon-box">
-                <i class="far fa-envelope"></i>
+        <!-- Contact Info (3 Cards - Width Match Form) -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="row g-3">
+              <div class="col-md-4 reveal reveal-delay-1">
+                <a href="mailto:rizvandyakbar25@gmail.com" class="contact-card">
+                  <div class="contact-icon-box">
+                    <i class="far fa-envelope"></i>
+                  </div>
+                  <div>
+                    <div class="contact-info-title" data-i18n="contactEmailLabel">Alamat Email</div>
+                    <div class="contact-info-detail">rizvandyakbar25@gmail.com</div>
+                  </div>
+                </a>
               </div>
-              <div>
-                <div class="contact-info-title" data-i18n="contactEmailLabel">
-                  Alamat Email
-                </div>
-                <div class="contact-info-detail">
-                  rizvandyakbar25@gmail.com
-                </div>
-              </div>
-            </a>
-          </div>
 
-          <div class="col-md-6 col-lg-5 reveal reveal-delay-2">
-            <a href="tel:+6287803265438" class="contact-card">
-              <div class="contact-icon-box">
-                <i class="fas fa-phone-alt"></i>
+              <div class="col-md-4 reveal reveal-delay-2">
+                <a href="tel:+6287803265438" class="contact-card">
+                  <div class="contact-icon-box">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <div class="contact-info-title" data-i18n="contactPhoneLabel">Telepon / WhatsApp</div>
+                    <div class="contact-info-detail">+62 878-0326-5438</div>
+                  </div>
+                </a>
               </div>
-              <div>
-                <div class="contact-info-title" data-i18n="contactPhoneLabel">
-                  Telepon / WhatsApp
+
+              <div class="col-md-4 reveal reveal-delay-3">
+                <div class="contact-card contact-card-resume">
+                  <div class="contact-icon-box">
+                    <i class="far fa-file-pdf"></i>
+                  </div>
+                  <div>
+                    <div class="contact-info-title" data-i18n="contactResumeLabel">Resume</div>
+                    <div class="contact-info-detail">
+                      <a
+                        href="assets/documents/resume-id.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resume-link"
+                      >
+                        Lihat
+                      </a>
+                      <span class="resume-separator">·</span>
+                      <a
+                        href="assets/documents/resume-id.pdf"
+                        download="Rizvandy_Akbar_PR_Resume.pdf"
+                        class="resume-link"
+                      >
+                        Download
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="contact-info-detail">+62 878-0326-5438</div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================================
+       <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
     <footer class="footer-custom">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <div class="footer-brand" data-i18n="navBrand">
-              RIZVANDY AKBAR P.R
-            </div>
+        <div class="row align-items-center g-4">
+          <!-- Brand & Subtitle -->
+          <div class="col-md-6 text-center text-md-start">
+            <div class="footer-brand" data-i18n="navBrand">RIZVANDY AKBAR P.R</div>
             <div class="footer-subtitle" data-i18n="footerSubtitle">
               Frontend Web Developer | Mahasiswa Teknik Informatika
             </div>
           </div>
 
+          <!-- Social Media Icons -->
           <div class="col-md-6 text-center text-md-end">
-            <div class="d-inline-flex gap-2 mb-2">
+            <div class="footer-social-wrapper">
               <a
                 href="https://github.com/rizvandy"
                 target="_blank"
@@ -796,21 +732,3 @@
         </div>
       </div>
     </footer>
-
-    <!-- ==========================================================================
-       JAVASCRIPT SCRIPTS
-       ========================================================================== -->
-    <!-- Bootstrap 5 JavaScript Bundle CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Modular Scripts -->
-    <script src="js/language.js"></script>
-    <script src="js/projects.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
