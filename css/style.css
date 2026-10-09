@@ -1062,11 +1062,18 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* Contact Form Card - Full Width Layout */
 .contact-form-card {
   background-color: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--border-radius-md);
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.contact-form-card h3 {
+  color: var(--black);
+  margin-bottom: 1.5rem;
 }
 
 .form-label {

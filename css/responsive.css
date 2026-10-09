@@ -171,15 +171,6 @@
     margin-bottom: 2.5rem;
   }
 
-  .education-card {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-
-  .education-icon-box {
-    margin-bottom: 0.5rem;
-  }
-
   .timeline-line {
     left: 18px;
   }
@@ -223,14 +214,21 @@
   }
 
   .quick-profile-card,
-  .skill-category-card,
-  .contact-form-card {
+  .skill-category-card {
     padding: 1.25rem;
   }
 
-    /* ==========================================
-     SKILLS GRID - 2 kolom di mobile kecil
-     ========================================== */
+  /* Contact Form - Mobile */
+  .contact-form-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Contact Info Cards - Mobile */
+  .contact-card {
+    padding: 1.25rem;
+  }
+
+  /* Skills Grid - 3 kolom di mobile kecil */
   .skill-items-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;

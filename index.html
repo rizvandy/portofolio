@@ -592,92 +592,23 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
+        <!-- ==========================================================================
        CONTACT SECTION
        ========================================================================== -->
     <section class="section-padding section-bg-alt" id="contact">
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header text-center reveal">
           <h2 class="section-title" data-i18n="contactTitle">Hubungi Saya</h2>
           <p class="section-subtitle" data-i18n="contactSubtitle">
             Terbuka untuk diskusi, peluang magang, dan kolaborasi proyek
           </p>
         </div>
 
-        <div class="row g-4">
-          <!-- Contact Information Cards -->
-          <div class="col-lg-5 reveal">
-            <div class="d-flex flex-column gap-3 mb-4">
-              <!-- Email -->
-              <a href="mailto:rizvandyakbar25@gmail.com" class="contact-card">
-                <div class="contact-icon-box">
-                  <i class="far fa-envelope"></i>
-                </div>
-                <div>
-                  <div class="contact-info-title" data-i18n="contactEmailLabel">
-                    Alamat Email
-                  </div>
-                  <div class="contact-info-detail">
-                    rizvandyakbar25@gmail.com
-                  </div>
-                </div>
-              </a>
-
-              <!-- Phone -->
-              <a href="tel:+6287803265438" class="contact-card">
-                <div class="contact-icon-box">
-                  <i class="fas fa-phone-alt"></i>
-                </div>
-                <div>
-                  <div class="contact-info-title" data-i18n="contactPhoneLabel">
-                    Telepon / WhatsApp
-                  </div>
-                  <div class="contact-info-detail">+62 878-0326-5438</div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Social Buttons -->
-            <div class="pt-2">
-              <div class="info-label mb-2" data-i18n="contactSocialLabel">
-                Media Sosial
-              </div>
-              <div class="social-links-grid">
-                <a
-                  href="https://github.com/rizvandy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-btn"
-                  aria-label="GitHub Profile"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/rizvandy-akbar-331304372/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-btn"
-                  aria-label="LinkedIn Profile"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/rizvandy_akbar/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-btn"
-                  aria-label="Instagram Profile"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="col-lg-7 reveal reveal-delay-1">
+        <!-- Contact Form (Full Width) -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-10 reveal">
             <div class="contact-form-card">
-              <h3 class="fs-5 fw-bold mb-3" data-i18n="formTitle">
+              <h3 class="fs-5 fw-bold mb-3 text-center" data-i18n="formTitle">
                 Kirim Pesan Langsung
               </h3>
 
@@ -744,7 +675,7 @@
                     <textarea
                       class="form-control"
                       id="form-message"
-                      rows="4"
+                      rows="5"
                       placeholder="Tuliskan pesan Anda di sini..."
                       required
                       data-i18n="formMessagePlaceholder"
@@ -763,6 +694,39 @@
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+
+        <!-- Contact Info (2 Cards Side-by-Side) -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5 reveal reveal-delay-1">
+            <a href="mailto:rizvandyakbar25@gmail.com" class="contact-card">
+              <div class="contact-icon-box">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div>
+                <div class="contact-info-title" data-i18n="contactEmailLabel">
+                  Alamat Email
+                </div>
+                <div class="contact-info-detail">
+                  rizvandyakbar25@gmail.com
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-5 reveal reveal-delay-2">
+            <a href="tel:+6287803265438" class="contact-card">
+              <div class="contact-icon-box">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <div class="contact-info-title" data-i18n="contactPhoneLabel">
+                  Telepon / WhatsApp
+                </div>
+                <div class="contact-info-detail">+62 878-0326-5438</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
