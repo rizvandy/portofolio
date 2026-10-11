@@ -17,7 +17,7 @@ const projectsData = [
     technologies: ["HTML5", "CSS3", "JavaScript ES6+", "Bootstrap 5", "Vercel"],
     image: "assets/images/projects/project-01/portofolio.jpg",
     github: "https://github.com/rizvandy/portofolio",
-    demo: "https://rizvandy-portofolio.vercel.app"
+    demo: "https://rizvandy.my.id"
   },
   {
     id: 2,
