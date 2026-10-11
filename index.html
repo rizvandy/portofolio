@@ -122,6 +122,14 @@
       />
     </noscript>
 
+     <!-- Preload LCP Image (Profile Photo) -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/profile/profile.webp"
+      type="image/webp"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -248,14 +256,13 @@
           <div class="col-lg-5 text-center">
             <div class="profile-image-container">
               <div class="profile-image-wrapper">
-                <img
-                  src="assets/images/profile/profile.jpg"
+                  <img
+                  src="assets/images/profile/profile.webp"
                   alt="Rizvandy Akbar P.R"
                   class="profile-img"
-                  onerror="
-                    this.style.display = 'none';
-                    this.nextElementSibling.style.display = 'flex';
-                  "
+                  fetchpriority="high"
+                  decoding="async"
+                  onerror="this.style.display = 'none'; this.nextElementSibling.style.display = 'flex';"
                 />
                 <div class="profile-placeholder" style="display: none">
                   <span class="profile-initials">RA</span>
