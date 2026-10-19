@@ -603,15 +603,17 @@ a:hover {
   border-color: var(--gray-400);
 }
 
+/* Ikon Teknologi (Devicon) */
 .skill-icon-img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
+  font-size: 32px;
+  line-height: 1;
   transition: transform 0.3s ease, filter 0.3s ease;
+  /* Default: monokrom abu gelap */
   filter: grayscale(1) brightness(0) opacity(0.85);
 }
 
 .skill-tag:hover .skill-icon-img {
+  /* Hover: warna asli muncul */
   filter: none;
   transform: scale(1.15);
 }
